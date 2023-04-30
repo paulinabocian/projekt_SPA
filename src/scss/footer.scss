@@ -1,0 +1,27 @@
+@import "../scss/variables.scss";
+
+.text-muted {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 0.75rem;
+  
+  ul {
+    margin-top: 0;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      font-size: 0.75rem;
+      button {
+        font-size: 0.75rem;
+        color: $darkgray;
+      }
+      a {
+        text-decoration: none;
+        color: $darkgray;
+      }
+    }
+  }
+  p {
+    margin: 0;
+  }
+}

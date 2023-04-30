@@ -1,0 +1,144 @@
+@import "../scss/variables.scss";
+
+.buttonsContainer {
+  button {
+    @media screen and (max-width: $sm) {
+      width: 25%;
+    }
+  }
+}
+
+.treatmentListItem {
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.429) 0 2px 8px 2px;
+  height: 300px;
+  width: 90vw;
+  font-weight: bold;
+  transition: transform 0.2s;
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  h4 {
+    font-size: 1rem;
+  }
+
+  h4,
+  strong {
+    background-color: #ffffff7d;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .btn {
+    font-weight: 500;
+  }
+  &:hover {
+    transform: scale(1.1);
+
+    h4 {
+      font-weight: 700;
+    }
+    strong {
+      font-weight: 700;
+    }
+    .btn {
+      color: black;
+    }
+  }
+  footer {
+    position: absolute;
+    bottom: 10px;
+  }
+}
+
+@for $i from 1 through 7 {
+  .treatment#{$i} {
+    background-image: url("../src/assets/treatment#{$i}.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.treatmentDetails {
+  background-color: $darkgray;
+  width: 70%;
+  margin: 20px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  article {
+    background-color: $background;
+    box-shadow: rgba(0, 0, 0, 0.429) 0 2px 8px 2px;
+    margin: 2em 1em;
+    padding: 1rem;
+
+    h3 {
+      color: black;
+    }
+    .imgTreatmentDetails {
+      height: 300px;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+
+      button {
+        border: 1px solid black;
+        padding: 10px;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.8rem;
+        transition: transform 0.2s;
+        &:hover {
+          transform: scale(1.1);
+          background-color: $focus;
+        }
+      }
+    }
+  }
+}
+
+@for $i from 1 through 7 {
+  #treatment#{$i} {
+    background-image: url("../src/assets/treatment#{$i}.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: $md) {
+  .list {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    ul {
+      text-align: center;
+    }
+  }
+  .treatmentListItem {
+    width: 90%;
+    height: 350px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: $lg) {
+  .treatmentListItem {
+    width: 25%;
+    height: 350px;
+    padding: 10px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}

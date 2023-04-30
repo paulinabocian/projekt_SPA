@@ -1,0 +1,22 @@
+.faq {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  .question {
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+      h5 {
+        font-weight: 700;
+      }
+    }
+    h5 {
+      font-weight: 500;
+    }
+    p {
+      font-weight: 300;
+    }
+  }
+}

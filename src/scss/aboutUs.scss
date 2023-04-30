@@ -1,0 +1,119 @@
+@import url("./scss/variables.scss");
+.aboutUs {
+  background-color: $gray;
+  padding: 20px;
+  margin-top: 30px;
+  display: inline-block;
+  position: relative;
+  .sectionButtons {
+    background-image: url("../src/assets/apartamentyroz.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  button {
+    box-shadow: $darkgray 0 2px 8px 2px;
+    width: 150px;
+    height: 60px;
+    display: block;
+    margin-top: 40px;
+    margin-right: 20px;
+    background-color: $background;
+    padding: 20px;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: translateX(20%);
+    }
+  }
+}
+.restaurant {
+  margin-top: 10px;
+  background-color: $darkgray;
+  box-shadow: rgba(112, 111, 111, 0.741) 0 2px 8px 2px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    font-size: 1rem;
+    display: block;
+  }
+  img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+}
+.aboutTreatments {
+  margin-top: 10px;
+  background-color: $darkgray;
+  box-shadow: rgba(112, 111, 111, 0.741) 0 2px 8px 2px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  p {
+    font-size: 1rem;
+    display: block;
+  }
+  img {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+  }
+  button {
+    background-color: $background;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.aboutRooms {
+  margin-top: 10px;
+  background-color: $darkgray;
+  box-shadow: rgba(112, 111, 111, 0.741) 0 2px 8px 2px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  p {
+    font-size: 1rem;
+    display: block;
+  }
+  img {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button {
+    background-color: $background;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

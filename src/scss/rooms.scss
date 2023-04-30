@@ -1,0 +1,121 @@
+@import "../scss/variables.scss";
+
+.roomListItem {
+  color: black;
+  font-weight: bold;
+  transition: transform 0.2s;
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+
+  footer {
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .btn {
+    font-weight: 500;
+  }
+  &:hover {
+    transform: scale(1.1);
+    h4 {
+      font-weight: 700;
+    }
+    strong {
+      font-weight: 700;
+    }
+    .btn {
+      color: black;
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 10px;
+  }
+}
+@for $i from 1 through 5 {
+  .room#{$i} {
+    background-image: url("../src/assets/apartament#{$i}.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .roomDetails {
+    background-color: $darkgray;
+    width: 70%;
+    margin: 20px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    article {
+      background-color: $background;
+      box-shadow: rgba(0, 0, 0, 0.429) 0 2px 8px 2px;
+      margin: 2em 1em;
+      padding: 1rem;
+
+      h3 {
+        color: black;
+      }
+      .imgRoomDetails {
+        height: 300px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        button {
+          border: 1px solid black;
+          padding: 10px;
+          width: 40%;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 0.8rem;
+          transition: transform 0.2s;
+          &:hover {
+            transform: scale(1.1);
+            background-color: $focus;
+          }
+        }
+      }
+    }
+  }
+
+  @for $i from 1 through 5 {
+    #room#{$i} {
+      background-image: url("../src/assets/apartament#{$i}.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+@media only screen and (min-width: $md) {
+  .roomListItem {
+    margin-right: 10px;
+    width: 90%;
+    height: 450px;
+    // margin-left: auto;
+    // margin-right: auto;
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: $lg) {
+  .roomListItem {
+    width: 28%;
+    height: 450px;
+    padding: 10px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}

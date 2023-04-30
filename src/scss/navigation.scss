@@ -1,0 +1,77 @@
+@import "../scss/variables.scss";
+
+nav {
+  background-color: $nav;
+
+  button,
+  .btn {
+    font-weight: bold;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none !important;
+    font-size: 1rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background: $green;
+      border-radius: 5px;
+    }
+  }
+
+  .btn.btn-active {
+    background-color: #f4b700;
+    text-decoration: underline;
+  }
+}
+main {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 2rem 0;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      box-shadow: $green 0 2px 8px 2px;
+      color: #fff;
+      padding: 1rem;
+      margin: 5px;
+      margin-bottom: 10px;
+
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        & > * + * {
+          margin-left: 1rem;
+        }
+      }
+
+      button,
+      .btn {
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+      }
+    }
+
+    li + li {
+      margin-top: 2rem;
+    }
+  }
+}

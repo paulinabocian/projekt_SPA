@@ -1,0 +1,19 @@
+.termsConditions {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  .terms {
+    &:hover {
+      h5 {
+        font-weight: 700;
+      }
+    }
+    h5 {
+      font-weight: 500;
+    }
+    p {
+      font-weight: 300;
+    }
+  }
+}
